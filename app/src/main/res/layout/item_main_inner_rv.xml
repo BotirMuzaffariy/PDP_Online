@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.loopeer.shadow.ShadowView
+        android:id="@+id/sv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        app:cornerRadius="12dp"
+        app:shadowDy="14"
+        app:shadowColor="#F8CA70"
+        app:backgroundColor="@color/main_color"
+        app:shadowMarginLeft="8dp"
+        app:shadowMarginRight="8dp"
+        app:shadowMarginTop="8dp"
+        app:shadowMarginBottom="14dp"
+        app:shadowRadius="8dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_tv_module"
+            android:gravity="center"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="24dp"
+            android:text="Kotlin Basic"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_gravity="center" />
+
+    </com.loopeer.shadow.ShadowView>
+
+</LinearLayout>

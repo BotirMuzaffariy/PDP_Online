@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <com.loopeer.shadow.ShadowView
+        android:id="@+id/sv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        android:foreground="?selectableItemBackground"
+        app:cornerRadius="999dp"
+        app:shadowColor="#F8CA70"
+        app:shadowDy="14"
+        app:shadowMarginBottom="15dp"
+        app:shadowMarginLeft="8dp"
+        app:shadowMarginRight="8dp"
+        app:shadowMarginTop="8dp"
+        app:shadowRadius="8dp">
+
+        <TextView
+            android:id="@+id/tv_position"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_tv_module"
+            android:gravity="center"
+            android:text="0\ndars"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:translationX="-3dp"
+            android:translationY="1dp"
+            app:layout_gravity="center" />
+
+    </com.loopeer.shadow.ShadowView>
+
+</LinearLayout>

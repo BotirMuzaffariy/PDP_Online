@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_marginHorizontal="28dp"
+        android:layout_marginVertical="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="6dp">
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="82dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/placeholder"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="4dp"
+                android:ellipsize="marquee"
+                android:paddingRight="8dp"
+                android:singleLine="true"
+                android:text="Kotlin basic"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/sv_position"
+                app:layout_constraintStart_toEndOf="@id/iv_image"
+                app:layout_constraintTop_toTopOf="@id/iv_image" />
+
+            <TextView
+                android:id="@+id/tv_course_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Android Development"
+                android:singleLine="true"
+                app:layout_constraintEnd_toStartOf="@id/sv_position"
+                android:ellipsize="marquee"
+                android:textColor="@android:color/darker_gray"
+                app:layout_constraintStart_toStartOf="@id/tv_name"
+                app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+            <TextView
+                android:id="@+id/tv_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batafsil"
+                android:textColor="@color/black"
+                android:textSize="12.5sp"
+                app:layout_constraintBottom_toBottomOf="@id/iv_image"
+                app:layout_constraintStart_toStartOf="@id/tv_name" />
+
+            <com.loopeer.shadow.ShadowView
+                android:id="@+id/sv_position"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:translationX="2dp"
+                app:cornerRadius="999dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shadowColor="#F8CA70"
+                app:shadowMargin="6dp"
+                app:shadowRadius="6dp">
+
+                <TextView
+                    android:id="@+id/tv_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_tv_module"
+                    android:gravity="center"
+                    android:text="-1"
+                    android:textColor="@color/white"
+                    app:layout_gravity="center" />
+
+            </com.loopeer.shadow.ShadowView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

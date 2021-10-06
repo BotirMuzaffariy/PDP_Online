@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EditModuleFragment">
+
+    <TextView
+        android:id="@+id/tv_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kotlin"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_et"
+        android:hint="Modul nomi"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_top"
+        app:layout_constraintWidth_percent="0.85" />
+
+    <EditText
+        android:id="@+id/et_position"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_et"
+        android:hint="Modul o`rni"
+        android:inputType="number"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_name"
+        app:layout_constraintWidth_percent="0.85" />
+
+    <com.loopeer.shadow.ShadowView
+        android:id="@+id/sv_save"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="6dp"
+        android:foreground="?selectableItemBackground"
+        app:cornerRadius="999dp"
+        app:layout_constraintEnd_toEndOf="@id/et_position"
+        app:layout_constraintTop_toBottomOf="@id/et_position"
+        app:shadowColor="#B294F3"
+        app:shadowMargin="6dp"
+        app:shadowRadius="6dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_settings"
+            android:padding="20dp"
+            android:src="@drawable/ic_checked"
+            app:layout_gravity="center" />
+
+    </com.loopeer.shadow.ShadowView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
